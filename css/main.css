@@ -220,12 +220,93 @@ img {
     padding-top: 6rem;
 
     .logo-area {
-        background-color: #4C82F7;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 30px;
+
+        .logo {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+            border: var(--grayscale-300) solid 2px;
+            border-radius: 10px;
+        }
     }
 
-    .app-features {
-        background-color: #22C55E;
+    .app-features-area {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        gap: 12rem;
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+
+        .app-features-content {
+            display: grid;
+            grid-template-rows: auto 1fr;
+            gap: 3rem;
+
+            .app-features-title {
+
+                h2 {
+                    font-size: 40px;
+                    font-weight: var(--font-weight-extrabold);
+                    margin: 0;
+                }
+
+                p {
+                    font-size: 18px;
+                    font-weight: var(--font-weight-regular);
+                }
+            }
+
+            .app-features-grid {
+                display: grid;
+                grid-template-columns:  1fr 1fr;
+                gap: 2rem;
+
+                .app-features-row {
+                    display: grid;
+                    grid-template-rows: 1fr 1fr 1fr;
+
+                    .app-features-section {
+                        display: grid;
+                        grid-template-columns: auto 1fr;
+                        gap: 1rem;
+                        
+                        .app-features-icon {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: #6365f115;
+                            border-radius: 5px;
+                            height: 60px;
+                            width: 60px;
+                            padding: 15px;
+                        }
+
+                        .app-features-text {
+
+                            h5 {
+                                font-size: 20px;
+                                font-weight: var(--font-weight-extrabold);
+                                margin: 0;
+                            }
+
+                            p {
+                                font-size: 16px;
+                                font-weight: var(--font-weight-regular);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
