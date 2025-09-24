@@ -361,3 +361,105 @@ img {
         }
     }
 }
+
+.app {
+    background-color: white;
+    padding-top: 6rem;
+
+    .app-container {
+        width: 1100px;
+        height: 100%;
+        margin: auto;
+
+        .app-area {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            padding-bottom: 6rem;
+
+            .app-content {
+                display: grid;
+                grid-template-rows: auto auto auto;
+
+                .app-text {
+
+                }
+
+                h2 {
+                    font-size: 32px;
+                    font-weight: var(--font-weight-extrabold);
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: var(--font-weight-regular);
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 5px;
+                    }
+                }
+
+                a {
+                    background-color: var(--brand-primary);
+                    color: var(--grayscale-white);
+                    border-radius: 5px;
+                    padding: 10px 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    text-decoration: none;
+                    font-size: 14px;
+                    transition: background 0.15s ease-in-out;
+                    width: 160px;
+                    margin-top: 3rem;
+
+                    &:hover {
+                        background-color: var(--button-hover-color);
+                    }
+                
+                    img {
+                        height: 100%;
+                        width: auto;
+                    }
+                }
+
+                .app-grid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 2rem;
+
+                    .app-grid-content {
+                        display: grid;
+                        grid-template-rows: auto 1fr;
+
+
+                        .app-grid-icon {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: #6365f115;
+                            border-radius: 5px;
+                            height: 60px;
+                            width: 60px;
+                            padding: 15px;
+                        }
+
+                        .app-grid-text {
+                            font-size: 16px;
+                            font-weight: var(--font-weight-regular);
+                            padding-top: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
