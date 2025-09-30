@@ -521,7 +521,7 @@ img {
                         border-right: none;
                         border-radius: 10px 0px 0px 10px;
                         background-color: white;
-                        background-image: url(/images/envelope.svg);
+                        background-image: url(../images/envelope.svg);
                         background-position: 15px 15px;
                         background-repeat: no-repeat;
                     }
