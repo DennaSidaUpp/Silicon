@@ -554,6 +554,15 @@ img {
     }
 }
 
+footer{
+    text-align: center;
+    color: var(--grayscale-600);
+    background-color: white;
+    padding: 50px;
+    font-size: 14px;
+    font-weight: var(--font-weight-regular);
+}
+
 ::placeholder {
     color: var(--grayscale-500);
     opacity: 1;
